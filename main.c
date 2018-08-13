@@ -6,7 +6,7 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 07:15:11 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 15:52:27 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/13 16:56:16 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char		*ft_strcat(char *dest, char *src);
 char		*ft_strncat(char *dest, char *src, int nb);
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int ft_strlcat(char *dest, char *src, unsigned int nb);
-
+char *ft_strcapitalize(char *str);
 
 int			ft_putchar(char c)
 {
@@ -45,7 +45,7 @@ int			main()
 	char	*dest;
 	char	*dest1;
 	char	str[148] = "Je suis une petite fille";
-	char	str1[148] = "je suis un petit garcon";
+	char	str1[148] = "Je suis un petit garcon";
 	int		ft_str_is_alpha(char *str);
 
 	dest = malloc(4096 * sizeof(char));
@@ -79,6 +79,9 @@ int			main()
 	printf("============================================================\n");
 	printf("EX09\n");
 	printf("%s\n", ft_strlowcase(str1));
+	printf("============================================================\n");
+	printf("EX010\n");
+	printf("%s\n", ft_strcapitalize(str1));
 	printf("============================================================\n");
 	printf("EX011\n");
 	printf("%i\n", ft_str_is_alpha(str1));

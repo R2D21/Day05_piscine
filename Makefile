@@ -26,6 +26,7 @@ SRCS	=	main.c \
 			ex07/ft_strncmp.c \
 			ex08/ft_strupcase.c \
 			ex09/ft_strlowcase.c \
+			ex10/ft_strcapitalize.c \
 			ex11/ft_str_is_alpha.c \
 			ex12/ft_str_is_numeric.c \
 			ex13/ft_str_is_lowercase.c \
