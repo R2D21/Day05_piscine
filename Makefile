@@ -34,6 +34,7 @@ SRCS	=	main.c \
 			ex16/ft_strcat.c \
 			ex17/ft_strncat.c \
 			ex18/ft_strlcat.c \
+			ex19/ft_strlcpy.c \
 
 OBJS	=	$(SRCS:.c=.o)
 

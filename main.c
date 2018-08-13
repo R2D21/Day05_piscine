@@ -6,7 +6,7 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 07:15:11 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 15:21:11 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/13 15:52:27 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@ int			ft_str_is_uppercase(char *str);
 int			ft_str_is_printable(char *str);
 char		*ft_strcat(char *dest, char *src);
 char		*ft_strncat(char *dest, char *src, int nb);
+unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int ft_strlcat(char *dest, char *src, unsigned int nb);
+
 
 int			ft_putchar(char c)
 {
@@ -101,6 +103,9 @@ int			main()
 	printf("============================================================\n");
 	printf("EX018\n");
 	printf("%i\n", ft_strlcat(str, str1, 4));
+	printf("============================================================\n");
+	printf("EX019\n");
+	printf("%i\n", ft_strlcpy(dest, str1, 4));
 	printf("============================================================\n");
 	return (0);
 }
