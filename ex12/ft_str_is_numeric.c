@@ -6,7 +6,7 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 09:29:25 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 09:13:07 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/13 14:22:17 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int			ft_str_is_numeric(char *str)
 		return (1);
 	while (str[i] != '\0')
 	{
-		if(str[i] < '0' || str[i] > '9')
+		if (str[i] < '0' || str[i] > '9')
 			return (0);
 		i++;
 	}

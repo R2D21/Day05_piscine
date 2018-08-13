@@ -31,6 +31,9 @@ SRCS	=	main.c \
 			ex13/ft_str_is_lowercase.c \
 			ex14/ft_str_is_uppercase.c \
 			ex15/ft_str_is_printable.c \
+			ex16/ft_strcat.c \
+			ex17/ft_strncat.c \
+			ex18/ft_strlcat.c \
 
 OBJS	=	$(SRCS:.c=.o)
 

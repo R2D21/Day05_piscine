@@ -6,7 +6,7 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 07:15:11 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 10:33:41 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/13 15:21:11 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,47 +15,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void	ft_putstr(char *str);
-void	ft_putnbr(int nbr);		
-int		ft_atoi(char *str);
-char	*ft_strcpy(char *dest, char *str);
-char	*ft_strncpy(char *dest, char *str, unsigned int n);
-int		ft_strcmp(char *s1, char *s2);
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
-char	*ft_strupcase(char *str);
-char	*ft_strlowcase(char *str);
-int		ft_str_is_numeric(char *str);
-int		ft_str_is_lowercase(char *str);
-int		ft_str_is_uppercase(char *str);
-int		ft_str_is_printable(char *str);
+void		ft_putstr(char *str);
+void		ft_putnbr(int nbr);		
+int			ft_atoi(char *str);
+char		*ft_strcpy(char *dest, char *str);
+char		*ft_strncpy(char *dest, char *str, unsigned int n);
+int			ft_strcmp(char *s1, char *s2);
+int			ft_strncmp(char *s1, char *s2, unsigned int n);
+char		*ft_strupcase(char *str);
+char		*ft_strlowcase(char *str);
+int			ft_str_is_numeric(char *str);
+int			ft_str_is_lowercase(char *str);
+int			ft_str_is_uppercase(char *str);
+int			ft_str_is_printable(char *str);
+char		*ft_strcat(char *dest, char *src);
+char		*ft_strncat(char *dest, char *src, int nb);
+unsigned int ft_strlcat(char *dest, char *src, unsigned int nb);
 
-int	ft_putchar(char c)
+int			ft_putchar(char c)
 {
 	write(1, &c, 1);
 	return (0);
 }
 
-void	*ft_malloc(int size)
-{
-	int		i;
-	char	*str;
-
-	str = NULL;
-	i = 0;
-	while (i < size)
-	{
-		str[i] = '\0';
-		i++;
-	}
-	return (str);
-}
-
-int		main()
+int			main()
 {
 	char	*dest;
 	char	*dest1;
-	char	str[148] = "jE suis\0";
-	char	str1[148] = "je suis";
+	char	str[148] = "Je suis une petite fille";
+	char	str1[148] = "je suis un petit garcon";
 	int		ft_str_is_alpha(char *str);
 
 	dest = malloc(4096 * sizeof(char));
@@ -104,6 +92,15 @@ int		main()
 	printf("============================================================\n");
 	printf("EX015\n");
 	printf("%i\n", ft_str_is_printable("ADFFF566565+65$#^&$%#&^$%"));
+	printf("============================================================\n");
+	printf("EX016\n");
+	printf("%s\n", ft_strcat(str, str1));
+	printf("============================================================\n");
+	printf("EX017\n");
+	printf("%s\n", ft_strncat(str, str1, 4));
+	printf("============================================================\n");
+	printf("EX018\n");
+	printf("%i\n", ft_strlcat(str, str1, 4));
 	printf("============================================================\n");
 	return (0);
 }

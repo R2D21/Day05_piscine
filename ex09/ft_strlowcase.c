@@ -6,7 +6,7 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 09:02:53 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/11 09:03:27 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/13 14:21:38 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ char	*ft_strlowcase(char *str)
 		str[i] = str[i] + 32;
 		i++;
 	}
-	return(str);
+	return (str);
 }

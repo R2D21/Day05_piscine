@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/11 08:51:43 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 14:21:16 by rboivin          ###   ########.fr       */
+/*   Created: 2018/08/13 14:36:40 by rboivin           #+#    #+#             */
+/*   Updated: 2018/08/13 15:32:36 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+/*int			ft_strlen(char *str)
 {
 	int		i;
+	int		j;
 
 	i = 0;
-	while (str[i] != '\0')
-	{
-		while (str[i] <= 32 || (str[i] >= 'A' && str[i] <= 'Z'))
-			i++;
-		str[i] = str[i] - 32;
+	j = 0;
+	while (str[i])
 		i++;
-	}
-	return (str);
+	return (i);
+}
+*/
+
+int			ft_strlen(char *str);
+
+char		*ft_strncat(char *dest, char *src, int nb)
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	j = ft_strlen(dest);
+	while (i < nb && src[i] != '\0')
+		dest[j++] = src[i++];
+	dest[j] = '\0';
+	return (dest);
 }
