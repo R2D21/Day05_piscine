@@ -6,11 +6,11 @@
 /*   By: rboivin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/13 14:36:40 by rboivin           #+#    #+#             */
-/*   Updated: 2018/08/13 15:32:36 by rboivin          ###   ########.fr       */
+/*   Updated: 2018/08/14 12:37:00 by rboivin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*int			ft_strlen(char *str)
+int			ft_strlen(char *str)
 {
 	int		i;
 	int		j;
@@ -21,9 +21,6 @@
 		i++;
 	return (i);
 }
-*/
-
-int			ft_strlen(char *str);
 
 char		*ft_strncat(char *dest, char *src, int nb)
 {
